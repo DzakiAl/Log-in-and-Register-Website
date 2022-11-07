@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111111;
+        }
+
+        header {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0vw 3vw;
+            height: 6vw;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            font-size: 3vw;
+        }
+
+        .name {
+            font-weight: 700;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li a {
+            padding: 2vw 2vw;
+        }
+
+        header .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2vw;
+        }
+
+        header .menu li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 5vw;
+        }
+
+        .button {
+            display: block;
+            background-color: #111111;
+            border: 0.25vw solid white;
+            width: 9vw;
+            height: 3vw;
+            font-size: 1.3vw;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            margin-top: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+
+        .button:hover {
+            background-color: #303030;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .signuplink {
+            color: white;
+            text-align: center;
+            font-size: 1.2vw;
+        }
+
+        .singup {
+            color: white;
+            font-size: 1.2vw;
+        }
+
+        .login input {
+            width: 25vw;
+            height: 3vw;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .forget {
+            font-size: 1vw;
+            color: white;
+        }
+
+        .email {
+            margin-bottom: 2vw;
+        }
+
+        .word {
+            color: white;
+            font-size: 4vw;
+        }
+
+        @media screen and (max-width: 480px) {
+            .login {
+                margin-top: 50vw;
+            }
+
+            .login input {
+                width: 60vw;
+                height: 7.5vw;
+            }
+
+            .button {
+                width: 25vw;
+                height: 8vw;
+                font-size: 4.5vw;
+                margin-top: 3vw;
+                margin-bottom: 3vw;
+            }
+
+            .forget {
+                font-size: 3vw;
+            }
+
+            .singup {
+                font-size: 3vw;
+            }
+
+            .signuplink {
+                font-size: 3vw;
+            }
+
+            .word {
+                font-size: 8vw;
+            }
+        }
+
+        @media screen and (max-width: 912px) and (min-width: 480px) {
+            .login {
+                margin-top: 40vw;
+            }
+
+            .login input {
+                width: 50vw;
+                height: 8vw;
+            }
+
+            .button {
+                width: 18vw;
+                height: 6vw;
+                font-size: 3vw;
+            }
+
+            .forget {
+                font-size: 2vw;
+            }
+
+            .singup {
+                font-size: 2vw;
+            }
+
+            .signuplink {
+                font-size: 2vw;
+            }
+
+            .word {
+                font-size: 7vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <p class="name">Social Media</p>
+        </div>
+        <ul class="menu">
+        <li><a href="">Help</a></li>
+        </ul>
+    </header>
+    <form align="center">
+    <div class="login">
+        <h1 class="word">Log in</h1>
+        <input class="email" type="email" placeholder="Email Address"><br>
+        <input type="Password" placeholder="Password"><br>
+        <center><button type="button" class="button" onclick="">Log in</button></center>
+        <a href="" class="forget">forget your password?</a>
+    </div>
+    </form>
+    <p class="signuplink">Don't have account?<a href="register.html" class="singup" style="margin-left: 0.3vw; ">Sign Up</a><p>
+</body>
+</html> 
