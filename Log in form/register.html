@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111111;
+        }
+
+        header {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0vw 3vw;
+            height: 6vw;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            font-size: 3vw;
+        }
+
+        .name {
+            font-weight: 700;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li a {
+            padding: 2vw 2vw;
+        }
+
+        header .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2vw;
+        }
+
+        header .menu li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .register {
+            color: white;
+            font-size: 4vw;
+        }
+
+        .username {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            margin-bottom: 2vw;
+            width: 12vw;
+            height: 3vw;
+            color: white;
+        }
+
+        .email {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            margin-bottom: 2vw;
+            width: 25vw;
+            height: 3vw;
+            color: white;
+        }
+
+        #password {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            margin-bottom: 2vw;
+            width: 25vw;
+            height: 3vw;
+            color: white;
+        }
+
+        .button {
+            display: block;
+            border: 0.25vw solid white;
+            width: 9vw;
+            height: 2.5vw;
+            line-height: 2.5vw;
+            font-size: 1.3vw;
+            text-decoration: none;
+            color: white;
+            margin-top: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            transition: all ease-in-out 0.3s;
+        }
+
+        label {
+            color: white;
+        }
+
+        label a {
+            color: white;
+            margin-left: 0.2vw;
+        }
+        
+        .haveacc {
+            color: white;
+        }
+
+        .login {
+            color: white;
+            margin-left: 0.3vw;
+        }
+
+        @media (orientation: portrait) and (max-width: 480px) {
+            header {
+                height: 10vw;
+            }
+
+            .brand {
+                font-size: 7vw;
+            }
+
+            header .menu li a {
+                font-size: 3vw;
+            }
+
+            .register {
+                font-size: 8vw;
+                margin-top: 40vw;
+            }
+
+            .username {
+                width: 30vw;
+                height: 8vw;
+            }
+
+            .email {
+                width: 62vw;
+                height: 8vw;
+            }
+
+            #password {
+                width: 62vw;
+                height: 8vw;
+            }
+
+            .privacy-and-policy {
+                font-size: 3.5vw;
+            }
+
+            .button {
+                width: 25vw;
+                height: 6.5vw;
+                line-height: 6.5vw;
+                font-size: 4vw;
+                margin-top: 3vw;
+                border: 0.5vw solid white;
+            }
+
+            .haveacc {
+                font-size: 3.5vw;
+            }
+
+            .login {
+                font-size: 3.5vw;
+            }
+        }
+
+        @media (orientation: portrait) and (max-width: 1024px) and (min-width: 480px) {
+            header {
+                height: 10vw;
+            }
+
+            .brand {
+                font-size: 7vw;
+            }
+
+            header .menu li a {
+                font-size: 3vw;
+            }
+
+            .register {
+                font-size: 8vw;
+                margin-top: 32.5vw;
+            }
+
+            .username {
+                width: 25vw;
+                height: 5vw;
+            }
+
+            .email {
+                width: 52vw;
+                height: 5vw;
+            }
+
+            #password {
+                width: 52vw;
+                height: 5vw;
+            }
+
+            .privacy-and-policy {
+                font-size: 2.5vw;
+            }
+
+            .button {
+                width: 20vw;
+                height: 6vw;
+                line-height: 6vw;
+                font-size: 3.5vw;
+                margin-top: 3vw;
+                border: 0.5vw solid white;
+            }
+
+            .haveacc {
+                font-size: 2.5vw;
+            }
+
+            .login {
+                font-size: 2.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <p class="name">Social Media</p>
+        </div>
+        <ul class="menu">
+        <li><a href="">Help</a></li>
+        </ul>
+    </header>
+    <form align="center">
+        <div class="form">
+            <h1 class="register">Register</h1>
+            <input class="username" type="text" placeholder="First Name"> <input class="username" type="text" placeholder="Last Name"><br>
+            <input class="email" type="email" placeholder="Email address"><br>
+            <input id="password" type="password" placeholder="Password (min. 8 char)"><br>
+            <div class="privacy-and-policy">
+                <input type="checkbox" class="checkbox"><label>I have read<a style="margin-left: 0.5vw;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">privacy and policy</a></label>
+            </div>
+            <center><a href="" class="button">Register</a></center>
+        </div>
+        <p class="haveacc">Have an Account?<a class="login" href="login.html">Log in now</a></p>
+    </form>
+</body>
+</html>
